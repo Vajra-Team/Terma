@@ -1,0 +1,41 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Terma",
+  "version": "0.1.0",
+  "identifier": "eu.vajrateam.terma",
+  "build": {
+    "frontendDist": "../dist",
+    "devUrl": "http://localhost:5173"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "Terma",
+        "width": 760,
+        "height": 860,
+        "minWidth": 520,
+        "minHeight": 600,
+        "decorations": true
+      }
+    ],
+    "security": {
+      "csp": null,
+      "assetProtocol": {
+        "enable": true,
+        "scope": [
+          "/usr/share/icons/**",
+          "/usr/share/pixmaps/**",
+          "/usr/share/swcatalog/icons/**",
+          "$HOME/.local/share/icons/**",
+          "$HOME/.local/share/terma/icons/**",
+          "$HOME/.cache/terma/preview/**"
+        ]
+      }
+    }
+  },
+  "bundle": {
+    "active": false,
+    "icon": ["icons/icon.png"]
+  }
+}

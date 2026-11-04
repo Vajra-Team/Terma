@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+ "http://www.freedesktop.org/standards/PolicyKit/1/policyconfig.dtd">
+<policyconfig>
+  <vendor>vajra</vendor>
+  <vendor_url>https://vajra-team.eu</vendor_url>
+
+  <!-- Offizielle Quellen, Entfernen, Systemupdate. „Ohne Passwort installieren“ gilt nur hierfür. -->
+  <action id="eu.vajrateam.terma.manage">
+    <description>Install, remove and update programs</description>
+    <description xml:lang="de">Programme installieren, entfernen und aktualisieren</description>
+    <message>Terma wants to install, remove or update programs.</message>
+    <message xml:lang="de">Terma möchte Programme installieren, entfernen oder aktualisieren.</message>
+    <icon_name>terma</icon_name>
+    <defaults>
+      <allow_any>no</allow_any>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>auth_admin</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/lib/terma/terma-helper</annotate>
+  </action>
+
+  <!-- AUR: fragt immer nach dem Passwort, auch mit „Ohne Passwort installieren“. -->
+  <action id="eu.vajrateam.terma.aur">
+    <description>Install a program from the AUR</description>
+    <description xml:lang="de">Ein Programm aus dem AUR installieren</description>
+    <message>Terma wants to install a program from the AUR.</message>
+    <message xml:lang="de">Terma möchte ein Programm aus dem AUR installieren.</message>
+    <icon_name>terma</icon_name>
+    <defaults>
+      <allow_any>no</allow_any>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/lib/terma/terma-helper-aur</annotate>
+  </action>
+</policyconfig>

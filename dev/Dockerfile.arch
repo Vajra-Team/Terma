@@ -1,0 +1,6 @@
+# Arch-Testumgebung für Terma: echte pacman-, makepkg- und AUR-Abläufe ohne CachyOS-Rechner.
+FROM archlinux:base-devel
+RUN pacman -Syu --noconfirm --needed rust git fakeroot flatpak webkit2gtk-4.1 nodejs npm desktop-file-utils pacman-contrib \
+ && pacman -Scc --noconfirm \
+ && useradd -m -u 1000 builder
+USER builder

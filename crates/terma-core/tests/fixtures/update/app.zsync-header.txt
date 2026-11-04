@@ -1,0 +1,9 @@
+zsync: 0.6.2
+Filename: KeePassXC-2.8.0-x86_64.AppImage
+MTime: Wed, 21 Oct 2026 20:36:41 +0000
+Blocksize: 2048
+Length: 52062712
+Hash-Lengths: 2,2,5
+URL: KeePassXC-2.8.0-x86_64.AppImage
+SHA-1: e7e0d7e489d0fdcd599caf2b9f3b105193cb1683
+

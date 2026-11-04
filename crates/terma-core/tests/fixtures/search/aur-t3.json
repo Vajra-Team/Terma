@@ -1,0 +1,62 @@
+[
+ {
+  "name": "t3code-bin",
+  "package_base": "t3code-bin",
+  "version": "0.1.5-1",
+  "description": "Desktop control surface for local coding agents",
+  "url": "https://github.com/pingdotgg/t3code",
+  "num_votes": 11,
+  "popularity": 0.95151,
+  "maintainer": "maria_rcks",
+  "first_submitted": 1772842332,
+  "last_modified": 1793279389,
+  "depends": [],
+  "make_depends": [],
+  "provides": []
+ },
+ {
+  "name": "t3code-nightly-bin",
+  "package_base": "t3code-nightly-bin",
+  "version": "0.1.6_nightly.20261030.3917-1",
+  "description": "Nightly desktop control surface for local coding agents",
+  "url": "https://github.com/pingdotgg/t3code",
+  "num_votes": 7,
+  "popularity": 1.85502,
+  "maintainer": "maria_rcks",
+  "first_submitted": 1776470037,
+  "last_modified": 1793346595,
+  "depends": [],
+  "make_depends": [],
+  "provides": []
+ },
+ {
+  "name": "t3-code-docker",
+  "package_base": "t3-code-docker",
+  "version": "0.0.31-3",
+  "description": "T3 Code headless server in Docker (instance t3-code-docker on port 3773) Allows multiple instances",
+  "url": "https://t3.codes",
+  "num_votes": 0,
+  "popularity": 0,
+  "maintainer": "a_i",
+  "first_submitted": 1785562353,
+  "last_modified": 1786900149,
+  "depends": [],
+  "make_depends": [],
+  "provides": []
+ },
+ {
+  "name": "t3-code-git",
+  "package_base": "t3-code-git",
+  "version": "0.0.17.r54.gd22c6f5-2",
+  "description": "Minimal web GUI for coding agents (desktop app, git build)",
+  "url": "https://github.com/pingdotgg/t3code",
+  "num_votes": 1,
+  "popularity": 0.010504,
+  "maintainer": "motherofmilk",
+  "first_submitted": 1773357627,
+  "last_modified": 1776350594,
+  "depends": [],
+  "make_depends": [],
+  "provides": []
+ }
+]

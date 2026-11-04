@@ -1,0 +1,20 @@
+[package]
+name = "terma-helper"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "terma-helper"
+path = "src/bin/manage.rs"
+
+[[bin]]
+name = "terma-helper-aur"
+path = "src/bin/aur.rs"
+
+[dependencies]
+terma-core = { path = "../terma-core" }
+libc = "0.2"
+
+[dev-dependencies]
+tempfile = "3"

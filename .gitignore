@@ -1,0 +1,10 @@
+target/
+node_modules/
+dist/
+.superpowers/
+packaging/pkg/
+packaging/src/
+packaging/*.pkg.tar.zst
+release/
+docs/superpowers/
+dev/pc.sh

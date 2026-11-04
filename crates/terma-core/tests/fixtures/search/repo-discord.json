@@ -1,0 +1,20 @@
+[
+ {
+  "name": "discord",
+  "version": "1:1.0.167-1",
+  "description": "All-in-one voice and text chat for gamers",
+  "repo": "extra",
+  "download_size": 2170552,
+  "installed_version": null,
+  "has_desktop_entry": true
+ },
+ {
+  "name": "python-pypresence",
+  "version": "4.6.2-1",
+  "description": "Discord RPC and Rich Presence wrapper library",
+  "repo": "extra",
+  "download_size": 30000,
+  "installed_version": null,
+  "has_desktop_entry": false
+ }
+]

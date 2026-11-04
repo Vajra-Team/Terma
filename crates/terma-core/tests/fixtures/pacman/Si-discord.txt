@@ -1,0 +1,21 @@
+Repository      : extra
+Name            : discord
+Version         : 1:1.0.167-1
+Description     : All-in-one voice and text chat for gamers
+Architecture    : x86_64
+URL             : https://discord.com
+Licenses        : LicenseRef-custom
+Groups          : None
+Provides        : None
+Depends On      : libnotify  libxss  nspr  nss  gtk3  hicolor-icon-theme
+Optional Deps   : libpulse: PulseAudio support
+                  libappindicator-gtk3: Systray indicator support
+                  xdg-utils: For opening URLs and files
+Conflicts With  : None
+Replaces        : None
+Download Size   : 2.07 MiB
+Installed Size  : 6.82 MiB
+Packager        : Robin Candau <antiz@archlinux.org>
+Build Date      : Mon Oct 26 20:12:28 2026
+Validated By    : SHA-256 Sum  Signature
+

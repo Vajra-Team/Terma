@@ -1,0 +1,43 @@
+/* vajra — Spacing, Radius, Elevation v2.0
+   8px-Basisraster. Flache Flächen — Schatten dezent, nie Glow auf der Mark. */
+
+:root {
+  /* Spacing (8px-Raster, plus 4px Halbschritt) */
+  --space-0:  0;
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  24px;
+  --space-6:  32px;
+  --space-7:  48px;
+  --space-8:  64px;
+  --space-9:  96px;
+  --space-10: 128px;
+
+  /* Radius */
+  /* 3px überall; Karten haben 0 und die Facette, rund nur Avatare */
+  --vajra-radius-sm: 3px;
+  --vajra-radius-md: 3px;
+  --vajra-radius-lg: 3px;
+  --radius-sm:   var(--vajra-radius-sm);
+  --radius-md:   var(--vajra-radius-md);
+  --radius-lg:   var(--vajra-radius-lg);
+  --radius-pill: 999px;
+
+  /* Elevation — dezente Tiefe auf Ink, kein Glow */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.40);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.55);
+
+  /* Layout */
+  --container-max: 1200px;
+  --content-max:   720px;
+
+  /* Motion — klar & unaufgeregt, kein Bounce */
+  --ease-standard: cubic-bezier(0.2, 0, 0.1, 1); /* @kind other */
+  --ease-out:      cubic-bezier(0.16, 1, 0.3, 1); /* @kind other */
+  --dur-fast:   120ms; /* @kind other */
+  --dur-normal: 200ms; /* @kind other */
+  --dur-slow:   320ms; /* @kind other */
+}

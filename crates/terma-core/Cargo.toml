@@ -1,0 +1,22 @@
+[package]
+name = "terma-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[features]
+test-util = []
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+ureq = "3"
+goblin = "0.10"
+backhand = "0.25"
+glob = "0.3"
+sha1 = "0.10"
+
+[dev-dependencies]
+terma-core = { path = ".", features = ["test-util"] }
+tempfile = "3"
+object = { version = "0.40", features = ["write"] }

@@ -1,0 +1,46 @@
+/* vajra — Typography G3
+   Überschriften: Ortica Light. Text, Buttons, Titel: Ortica (400, 700).
+   Wortmarken vajra, Sila, Lodro, Rigba: Outfit 800, leicht negatives Tracking.
+   Daten, Zahlen, Code: Martian Mono. */
+
+:root {
+  /* Familien */
+  --vajra-font-sans: 'Ortica', Georgia, 'Times New Roman', serif;
+  --vajra-font-mono: 'Martian Mono', ui-monospace, monospace;
+  --font-display:  'Ortica Light', Georgia, 'Times New Roman', serif;
+  --font-body:     var(--vajra-font-sans);
+  --font-wordmark: 'Outfit', system-ui, -apple-system, sans-serif;
+  --font-mono:     var(--vajra-font-mono);
+
+  /* Gewichte */
+  --fw-regular:  400; /* @kind font */
+  --fw-medium:   500; /* @kind font */
+  --fw-bold:     700; /* @kind font */
+  --fw-black:    800; /* @kind font */
+
+  /* Type-Skala (1.250 Major Third, Basis 16px) */
+  --fs-display: 3.815rem;  /* 61px */
+  --fs-h1:      3.052rem;  /* 49px */
+  --fs-h2:      2.441rem;  /* 39px */
+  --fs-h3:      1.953rem;  /* 31px */
+  --fs-h4:      1.563rem;  /* 25px */
+  --fs-h5:      1.25rem;   /* 20px */
+  --fs-body-lg: 1.125rem;  /* 18px */
+  --fs-body:    1rem;      /* 16px */
+  --fs-sm:      0.875rem;  /* 14px */
+  --fs-xs:      0.75rem;   /* 12px */
+
+  /* Zeilenhöhen */
+  --lh-tight:   1.08;  /* @kind font */
+  --lh-snug:    1.25;  /* @kind font */
+  --lh-normal:  1.5;   /* @kind font */
+  --lh-relaxed: 1.65;  /* @kind font */
+
+  /* Tracking */
+  --tracking-wordmark: -0.02em;  /* @kind font */
+  --tracking-display:  -0.015em; /* @kind font */
+  --tracking-tight:    -0.01em;  /* @kind font */
+  --tracking-normal:   0;        /* @kind font */
+  --tracking-wide:     0.04em;   /* @kind font */
+  --tracking-mono:     0.01em;   /* @kind font */
+}

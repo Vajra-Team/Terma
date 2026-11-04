@@ -1,0 +1,5 @@
+/usr/share/applications/Alacritty.desktop is owned by alacritty 0.17.0-1.2
+/usr/share/applications/cachyos-hello.desktop is owned by cachyos-hello 0.28.1-1
+/usr/share/applications/discord.desktop is owned by discord 1:1.0.156-1
+/usr/share/applications/org.kde.dolphin.desktop is owned by dolphin 26.08.0-5.1
+/usr/share/applications/steam.desktop is owned by steam 1.0.0.87-3

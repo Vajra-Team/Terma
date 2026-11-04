@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Terma
+Comment=Install programs
+Comment[de]=Programme installieren
+Exec=terma %f
+Icon=terma
+Terminal=false
+Categories=System;PackageManager;
+MimeType=application/vnd.appimage;application/x-iso9660-appimage;
+StartupWMClass=terma

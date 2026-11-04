@@ -1,0 +1,4 @@
+extra/discord 1:1.0.167-1
+    All-in-one voice and text chat for gamers
+extra/python-pypresence 4.6.2-1
+    Discord RPC and Rich Presence wrapper library

@@ -1,0 +1,4 @@
+# Sonst bliebe die Regel „Ohne Passwort“ nach dem Entfernen liegen und wirkte bei einer Neuinstallation still weiter.
+post_remove() {
+  rm -f /etc/polkit-1/rules.d/49-terma.rules
+}

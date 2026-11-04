@@ -1,0 +1,90 @@
+{
+  "tag_name": "2.8.0",
+  "prerelease": false,
+  "assets": [
+    {
+      "name": "KeePassXC-2.8.0-1-aarch64.AppImage.zsync",
+      "browser_download_url": "https://github.com/keepassxreboot/keepassxc/releases/download/2.8.0/KeePassXC-2.8.0-1-aarch64.AppImage.zsync",
+      "size": 175487,
+      "updated_at": "2026-10-23T22:32:21Z"
+    },
+    {
+      "name": "KeePassXC-2.8.0-1-x86_64.AppImage",
+      "browser_download_url": "https://github.com/keepassxreboot/keepassxc/releases/download/2.8.0/KeePassXC-2.8.0-1-x86_64.AppImage",
+      "size": 52062712,
+      "updated_at": "2026-10-23T22:32:46Z"
+    },
+    {
+      "name": "KeePassXC-2.8.0-1-x86_64.AppImage.DIGEST",
+      "browser_download_url": "https://github.com/keepassxreboot/keepassxc/releases/download/2.8.0/KeePassXC-2.8.0-1-x86_64.AppImage.DIGEST",
+      "size": 100,
+      "updated_at": "2026-10-23T22:32:47Z"
+    },
+    {
+      "name": "KeePassXC-2.8.0-1-x86_64.AppImage.sig",
+      "browser_download_url": "https://github.com/keepassxreboot/keepassxc/releases/download/2.8.0/KeePassXC-2.8.0-1-x86_64.AppImage.sig",
+      "size": 525,
+      "updated_at": "2026-10-23T22:32:47Z"
+    },
+    {
+      "name": "KeePassXC-2.8.0-1-x86_64.AppImage.zsync",
+      "browser_download_url": "https://github.com/keepassxreboot/keepassxc/releases/download/2.8.0/KeePassXC-2.8.0-1-x86_64.AppImage.zsync",
+      "size": 178187,
+      "updated_at": "2026-10-23T22:32:47Z"
+    },
+    {
+      "name": "KeePassXC-2.8.0-1-x86_64.AppImage.zsync.DIGEST",
+      "browser_download_url": "https://github.com/keepassxreboot/keepassxc/releases/download/2.8.0/KeePassXC-2.8.0-1-x86_64.AppImage.zsync.DIGEST",
+      "size": 106,
+      "updated_at": "2026-10-23T22:32:48Z"
+    },
+    {
+      "name": "KeePassXC-2.8.0-1-x86_64.AppImage.zsync.sig",
+      "browser_download_url": "https://github.com/keepassxreboot/keepassxc/releases/download/2.8.0/KeePassXC-2.8.0-1-x86_64.AppImage.zsync.sig",
+      "size": 525,
+      "updated_at": "2026-10-23T22:32:48Z"
+    },
+    {
+      "name": "KeePassXC-2.8.0-aarch64.AppImage.zsync",
+      "browser_download_url": "https://github.com/keepassxreboot/keepassxc/releases/download/2.8.0/KeePassXC-2.8.0-aarch64.AppImage.zsync",
+      "size": 175473,
+      "updated_at": "2026-10-21T20:45:37Z"
+    },
+    {
+      "name": "KeePassXC-2.8.0-x86_64.AppImage",
+      "browser_download_url": "https://github.com/keepassxreboot/keepassxc/releases/download/2.8.0/KeePassXC-2.8.0-x86_64.AppImage",
+      "size": 52062712,
+      "updated_at": "2026-10-21T20:46:08Z"
+    },
+    {
+      "name": "KeePassXC-2.8.0-x86_64.AppImage.DIGEST",
+      "browser_download_url": "https://github.com/keepassxreboot/keepassxc/releases/download/2.8.0/KeePassXC-2.8.0-x86_64.AppImage.DIGEST",
+      "size": 98,
+      "updated_at": "2026-10-22T07:05:09Z"
+    },
+    {
+      "name": "KeePassXC-2.8.0-x86_64.AppImage.sig",
+      "browser_download_url": "https://github.com/keepassxreboot/keepassxc/releases/download/2.8.0/KeePassXC-2.8.0-x86_64.AppImage.sig",
+      "size": 488,
+      "updated_at": "2026-10-22T07:05:09Z"
+    },
+    {
+      "name": "KeePassXC-2.8.0-x86_64.AppImage.zsync",
+      "browser_download_url": "https://github.com/keepassxreboot/keepassxc/releases/download/2.8.0/KeePassXC-2.8.0-x86_64.AppImage.zsync",
+      "size": 178187,
+      "updated_at": "2026-10-21T20:46:09Z"
+    },
+    {
+      "name": "KeePassXC-2.8.0-x86_64.AppImage.zsync.DIGEST",
+      "browser_download_url": "https://github.com/keepassxreboot/keepassxc/releases/download/2.8.0/KeePassXC-2.8.0-x86_64.AppImage.zsync.DIGEST",
+      "size": 104,
+      "updated_at": "2026-10-22T07:05:10Z"
+    },
+    {
+      "name": "KeePassXC-2.8.0-x86_64.AppImage.zsync.sig",
+      "browser_download_url": "https://github.com/keepassxreboot/keepassxc/releases/download/2.8.0/KeePassXC-2.8.0-x86_64.AppImage.zsync.sig",
+      "size": 488,
+      "updated_at": "2026-10-22T07:05:10Z"
+    }
+  ]
+}

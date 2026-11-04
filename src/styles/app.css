@@ -1,0 +1,35 @@
+/* Seitenrahmen von Terma. Fläche wie der Fensterinhalt in den Entwürfen. */
+html, body { height: 100%; }
+body { background: var(--surface-sunken); }
+:focus-visible { outline: 2px solid var(--ring-focus); outline-offset: 3px; }
+button { font: inherit; }
+
+.seite { max-width: 720px; margin: 0 auto; padding: 24px 24px 40px; display: flex; flex-direction: column; gap: 20px; }
+.abschnitt-titel { margin: 6px 0 -8px; }
+.update-zeile { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.leise { color: var(--text-muted); font-size: var(--fs-sm); }
+.mitte { align-self: center; }
+
+.overlay { position: fixed; inset: 0; background: var(--surface-overlay); display: grid; place-items: center; padding: 24px; z-index: 10; }
+.dialog { width: min(440px, 100%); padding: 24px; display: flex; flex-direction: column; gap: 16px; box-shadow: var(--shadow-lg); }
+.dialog p { margin: 0; color: var(--text-secondary); }
+.knopfreihe { display: flex; gap: 12px; justify-content: flex-end; flex-wrap: wrap; }
+
+.einstellung { display: flex; gap: 16px; align-items: flex-start; padding: 20px; }
+.einstellung .txt { flex: 1; display: flex; flex-direction: column; gap: 6px; }
+.einstellung p { margin: 0; font-size: var(--fs-sm); color: var(--text-secondary); }
+
+/* Karten mit App-Kopf (Suche, Datei-Fenster, Bestätigung) */
+.karte { padding: 20px; display: flex; flex-direction: column; gap: 18px; }
+.app { display: flex; gap: 14px; align-items: center; }
+.sub { margin: 2px 0 0; color: var(--text-secondary); font-size: var(--fs-sm); }
+.meta { display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: center; }
+/* Projektseite: Adresse immer sichtbar, lange Pfade werden gekürzt. */
+.textlink.adresse { padding: 0; min-width: 0; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.daten { font-family: var(--font-mono); font-size: 12px; letter-spacing: var(--tracking-mono); color: var(--text-muted); }
+.voll { width: 100%; }
+.links { align-self: flex-start; padding-left: 0; }
+.gruende { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.gruende li { display: flex; gap: 12px; color: var(--text-secondary); font-size: var(--fs-sm); }
+.letzte { margin: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.log { margin: 0; max-height: 320px; overflow: auto; padding: 14px; background: var(--surface-page); border-radius: var(--radius-sm); font-family: var(--font-mono); font-size: 12px; line-height: 1.5; color: var(--text-secondary); white-space: pre-wrap; }

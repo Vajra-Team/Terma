@@ -1,0 +1,133 @@
+/* vajra — Colors v3.0 · „Esse"
+   Messing (Primär / Held) · Glut (Akzent, sparsam) · warme Ink-Neutrals · Status
+   Flache Vollflächen — KEIN Verlauf.
+
+   Theme-Wechsel ggü. v2.0 (Lapis):
+   - Primär ist jetzt Messing-Gold (#CC9648) statt Lapis-Blau.
+   - Akzent ist Glut-Orange (#D2742E) statt Messing.
+   - Heimfläche ist warmes Ink (#15120D) statt blaustichigem #0C0F1A.
+   Original-Lapis-Palette vollständig gesichert unter /archive/lapis/.
+
+   Kompatibilität: Die alten Variablennamen --vajra-lapis-* / --vajra-brass*
+   bleiben als Aliase erhalten und zeigen auf die neuen Esse-Werte, damit
+   bestehende Komponenten unverändert funktionieren. Neuer Code nutzt
+   --vajra-messing-* und --vajra-glut*. */
+
+:root {
+  /* ---- Messing · Primär / Held ---- */
+  --vajra-messing-700: #9A6F22;
+  --vajra-messing-600: #CC9648; /* Basis-Primärfarbe */
+  --vajra-messing-500: #DAA856;
+  --vajra-messing-400: #E6B968;
+
+  /* ---- Glut · Akzent (NIE für Fließtext) ---- */
+  --vajra-glut:     #D2742E;
+  --vajra-glut-300: #E89A5C;
+
+  /* ---- Ink · warme Neutrals ---- */
+  --vajra-ink:        #15120D; /* Background / Heimfläche */
+  --vajra-ink-raised: #1F1B14; /* Karten */
+  --vajra-border:     #342E22;
+  --vajra-muted:      #7E7666; /* Text muted */
+  --vajra-secondary:  #B2A892; /* Text sekundär */
+  --vajra-text:       #F1ECE1; /* Text primär */
+  --vajra-white:      #FFFFFF;
+
+  /* ---- Status ---- */
+  --vajra-success: #3FA06A;
+  --vajra-warning: #E0A53A;
+  --vajra-error:   #D14A3A;
+
+  /* ---- Kompatibilität: alte Namen → Esse-Werte ---- */
+  --vajra-lapis-700: var(--vajra-messing-700);
+  --vajra-lapis-600: var(--vajra-messing-600);
+  --vajra-lapis-500: var(--vajra-messing-500);
+  --vajra-lapis-400: var(--vajra-messing-400);
+  --vajra-brass:     var(--vajra-glut);
+  --vajra-brass-300: var(--vajra-glut-300);
+
+  /* ============ Semantische Aliase ============ */
+  /* Flächen */
+  --surface-page:     var(--vajra-ink);
+  --surface-card:     var(--vajra-ink-raised);
+  --surface-raised:   var(--vajra-ink-raised);
+  --surface-invert:   var(--vajra-white);
+  --surface-overlay:  rgba(21, 18, 13, 0.72);
+
+  /* Text */
+  --text-primary:    var(--vajra-text);
+  --text-secondary:  var(--vajra-secondary);
+  --text-muted:      var(--vajra-muted);
+  --text-invert:     var(--vajra-ink);
+  --text-on-accent:  var(--vajra-ink);
+  --text-on-primary: #1A1409; /* dunkle Tinte auf Messing-Gold */
+
+  /* Marke / Aktion */
+  --color-primary:        var(--vajra-messing-600);
+  --color-primary-hover:  var(--vajra-messing-500);
+  --color-primary-active: var(--vajra-messing-700);
+  --color-accent:         var(--vajra-glut);
+  --color-accent-hover:   var(--vajra-glut-300);
+
+  /* Linien */
+  --border-default: var(--vajra-border);
+  --border-strong:  #443C2D;
+  --border-accent:  var(--vajra-messing-600); /* Gold-Oberkante Highlight-Karte */
+  --ring-focus:     var(--vajra-messing-400);
+
+  /* Status semantisch */
+  --color-success: var(--vajra-success);
+  --color-warning: var(--vajra-warning);
+  --color-error:   var(--vajra-error);
+}
+
+/* ============ Themes ============
+   Erzeugt aus tokens.json (Themes Ink und Hell). data-theme auf <html> schaltet die
+   ganze Seite, auf einem Abschnitt nur diesen Abschnitt. */
+:root, [data-theme="ink"] {
+  --surface-page: var(--vajra-ink);
+  --surface-card: var(--vajra-ink-raised);
+  --surface-raised: var(--vajra-ink-raised);
+  --surface-invert: var(--vajra-white);
+  --text-primary: var(--vajra-text);
+  --text-secondary: var(--vajra-secondary);
+  --text-muted: var(--vajra-muted);
+  --text-invert: var(--vajra-ink);
+  --border-default: var(--vajra-border);
+  --border-strong: #443c2d;
+  --ring-focus: var(--vajra-messing-400);
+  --color-success: var(--vajra-success);
+  --surface-sunken: #120f0a;
+  --border-subtle: #241f16;
+  --text-faint: #7e7666;
+  --gold-mark: var(--vajra-messing-400);
+  --gold-text: var(--vajra-messing-400);
+  --ember-text: var(--vajra-glut-300);
+  --tint-success: #191F15;
+  --tint-warning: #2C1E11;
+  --tint-error: #241611;
+}
+
+[data-theme="hell"] {
+  --surface-page: #faf7f0;
+  --surface-card: #ffffff;
+  --surface-raised: #ffffff;
+  --surface-invert: var(--vajra-ink);
+  --text-primary: #15120d;
+  --text-secondary: #736b5a;
+  --text-muted: #968d78;
+  --text-invert: var(--vajra-text);
+  --border-default: #e4ddce;
+  --border-strong: #c8bda6;
+  --ring-focus: var(--vajra-messing-600);
+  --color-success: #33864f;
+  --surface-sunken: #f0ece2;
+  --border-subtle: #f0ece2;
+  --text-faint: #a89e88;
+  --gold-mark: var(--vajra-messing-600);
+  --gold-text: #8d661f;
+  --ember-text: #8d661f;
+  --tint-success: #EAF6F0;
+  --tint-warning: #FBF3E2;
+  --tint-error: #FBECEC;
+}

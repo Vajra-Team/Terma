@@ -1,0 +1,35 @@
+# Terma: Programme installieren ohne Terminal. Baut aus dem Arbeitsbaum (eine Ebene über packaging/).
+pkgname=terma
+pkgver=0.1.0
+pkgrel=1
+pkgdesc='Install programs without a terminal: natively from the repositories, the AUR or as an AppImage'
+arch=('x86_64')
+url='https://github.com/Vajra-Team/Terma'
+license=('MIT')
+depends=('webkit2gtk-4.1' 'pacman' 'polkit' 'git' 'base-devel' 'fakeroot' 'desktop-file-utils' 'xdg-utils' 'archlinux-appstream-data')
+optdepends=('flatpak: find and remove duplicate Flatpaks')
+makedepends=('cargo' 'nodejs' 'npm')
+options=('!debug' '!lto')
+source=()
+install=terma.install
+
+build() {
+  cd "$startdir/.."
+  npm ci
+  npm run build
+  cargo build --release --workspace --locked
+}
+
+package() {
+  cd "$startdir/.."
+  install -Dm755 target/release/terma "$pkgdir/usr/bin/terma"
+  install -Dm755 target/release/terma-helper "$pkgdir/usr/lib/terma/terma-helper"
+  install -Dm755 target/release/terma-helper-aur "$pkgdir/usr/lib/terma/terma-helper-aur"
+  install -Dm644 packaging/eu.vajrateam.terma.policy "$pkgdir/usr/share/polkit-1/actions/eu.vajrateam.terma.policy"
+  install -Dm644 packaging/terma.desktop "$pkgdir/usr/share/applications/terma.desktop"
+  install -Dm644 packaging/terma-install.desktop "$pkgdir/usr/share/kio/servicemenus/terma-install.desktop"
+  for icon in packaging/hicolor/*/apps/terma.*; do
+    install -Dm644 "$icon" "$pkgdir/usr/share/icons/${icon#packaging/}"
+  done
+  install -Dm644 -t "$pkgdir/usr/share/licenses/terma" LICENSE packaging/THIRD-PARTY-LICENSES.txt src/styles/vajra/fonts/*-OFL.txt
+}

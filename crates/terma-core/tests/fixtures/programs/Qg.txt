@@ -1,0 +1,4 @@
+kde-applications ark
+kde-applications dolphin
+kde-utilities ark
+kde-system dolphin

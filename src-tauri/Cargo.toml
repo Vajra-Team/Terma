@@ -1,0 +1,24 @@
+[package]
+name = "terma-app"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "terma"
+path = "src/main.rs"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+terma-core = { path = "../crates/terma-core" }
+tauri = { version = "2", features = ["protocol-asset"] }
+tauri-plugin-single-instance = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[features]
+# Ohne Tauri-CLI: eingebettete Oberfläche statt Dev-Server.
+default = ["custom-protocol"]
+custom-protocol = ["tauri/custom-protocol"]

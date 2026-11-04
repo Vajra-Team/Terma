@@ -1,0 +1,2 @@
+com.discordapp.Discord	Discord	system
+org.keepassxc.KeePassXC	KeePassXC	system

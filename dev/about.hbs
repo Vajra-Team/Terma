@@ -1,0 +1,13 @@
+Third-party licenses in Terma
+=============================
+
+The Terma binary contains these Rust crates, with their sources on crates.io, and the JavaScript packages
+at the end of this file.
+{{#each licenses}}
+
+--------------------------------------------------------------------------------
+{{{name}}}
+Used by: {{#each used_by}}{{crate.name}} {{crate.version}}{{#unless @last}}, {{/unless}}{{/each}}
+
+{{{text}}}
+{{/each}}

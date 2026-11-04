@@ -1,0 +1,46 @@
+/* vajra — Base/Reset v2.0
+   Heimflächen sind Ink (#15120D) und reines Weiß. */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--surface-page);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: var(--lh-normal);
+  font-weight: var(--fw-regular);
+  -webkit-font-smoothing: antialiased;
+  font-synthesis: none; /* nie Fake-Fett: Ortica Light hat nur einen Schnitt */
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5 { margin: 0; color: var(--text-primary); line-height: var(--lh-tight); }
+
+/* Überschriften: Ortica Light, nur Gewicht 400 */
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: var(--fw-regular);
+  letter-spacing: var(--tracking-tight);
+}
+
+/* Titel: Ortica Bold */
+h4, h5 {
+  font-family: var(--font-body);
+  font-weight: var(--fw-bold);
+  letter-spacing: var(--tracking-tight);
+  line-height: var(--lh-snug);
+}
+
+code, kbd, samp, pre {
+  font-family: var(--font-mono);
+  font-feature-settings: 'tnum' 1;
+}
+
+::selection {
+  background: var(--vajra-messing-600);
+  color: #1A1409;
+}

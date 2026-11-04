@@ -1,0 +1,43 @@
+/* vajra — Webfonts (self-hosted, alle SIL Open Font License)
+   Ortica Light: Überschriften. Ortica Regular/Bold: Text, Buttons, Titel.
+   Outfit: nur Wortmarken. Martian Mono: Zahlen, Daten, Code (Variable Font). */
+
+@font-face {
+  font-family: 'Ortica Light';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/Ortica-Light.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Ortica';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/Ortica-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Ortica';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/Ortica-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('../fonts/Outfit-Variable.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Martian Mono';
+  font-style: normal;
+  font-weight: 100 800;
+  font-display: swap;
+  src: url('../fonts/MartianMono-Variable.woff2') format('woff2');
+}
