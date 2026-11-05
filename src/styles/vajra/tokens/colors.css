@@ -28,7 +28,7 @@
   --vajra-ink:        #15120D; /* Background / Heimfläche */
   --vajra-ink-raised: #1F1B14; /* Karten */
   --vajra-border:     #342E22;
-  --vajra-muted:      #7E7666; /* Text muted */
+  --vajra-muted:      #8C8473; /* Text muted */
   --vajra-secondary:  #B2A892; /* Text sekundär */
   --vajra-text:       #F1ECE1; /* Text primär */
   --vajra-white:      #FFFFFF;
@@ -98,6 +98,8 @@
   --ring-focus: var(--vajra-messing-400);
   --color-success: var(--vajra-success);
   --surface-sunken: #120f0a;
+  --surface-hover: #2a2419;
+  --surface-selected: #352d20;
   --border-subtle: #241f16;
   --text-faint: #7e7666;
   --gold-mark: var(--vajra-messing-400);
@@ -114,14 +116,16 @@
   --surface-raised: #ffffff;
   --surface-invert: var(--vajra-ink);
   --text-primary: #15120d;
-  --text-secondary: #736b5a;
-  --text-muted: #968d78;
+  --text-secondary: #595245;
+  --text-muted: #736b5a;
   --text-invert: var(--vajra-text);
   --border-default: #e4ddce;
   --border-strong: #c8bda6;
   --ring-focus: var(--vajra-messing-600);
   --color-success: #33864f;
   --surface-sunken: #f0ece2;
+  --surface-hover: #f4efe5;
+  --surface-selected: #efe6d3;
   --border-subtle: #f0ece2;
   --text-faint: #a89e88;
   --gold-mark: var(--vajra-messing-600);

@@ -1,11 +1,11 @@
 /* vajra — Typography G3
-   Überschriften: Ortica Light. Text, Buttons, Titel: Ortica (400, 700).
+   Überschriften: Ortica Light. Text, Buttons, Titel: Gantari (400, 500, 600, 700).
    Wortmarken vajra, Sila, Lodro, Rigba: Outfit 800, leicht negatives Tracking.
    Daten, Zahlen, Code: Martian Mono. */
 
 :root {
   /* Familien */
-  --vajra-font-sans: 'Ortica', Georgia, 'Times New Roman', serif;
+  --vajra-font-sans: 'Gantari', system-ui, -apple-system, sans-serif;
   --vajra-font-mono: 'Martian Mono', ui-monospace, monospace;
   --font-display:  'Ortica Light', Georgia, 'Times New Roman', serif;
   --font-body:     var(--vajra-font-sans);

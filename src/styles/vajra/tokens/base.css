@@ -1,5 +1,5 @@
 /* vajra — Base/Reset v2.0
-   Heimflächen sind Ink (#15120D) und reines Weiß. */
+   Heimflächen sind Ink (#15120D) und Papier (#FAF7F0). */
 
 *, *::before, *::after { box-sizing: border-box; }
 
@@ -27,7 +27,7 @@ h1, h2, h3 {
   letter-spacing: var(--tracking-tight);
 }
 
-/* Titel: Ortica Bold */
+/* Titel: Gantari Bold */
 h4, h5 {
   font-family: var(--font-body);
   font-weight: var(--fw-bold);

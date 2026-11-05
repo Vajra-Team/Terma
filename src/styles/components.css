@@ -24,7 +24,7 @@
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 10px;
   height: 48px; padding: 0 26px; border: 0; border-radius: var(--radius-sm); cursor: pointer;
-  font-family: var(--font-body); font-size: var(--fs-body); font-weight: 700; line-height: 1; white-space: nowrap;
+  font-family: var(--font-body); font-size: var(--fs-body); font-weight: 600; line-height: 1; white-space: nowrap;
   transition: background-color var(--dur-fast) var(--ease-standard), box-shadow var(--dur-fast) var(--ease-standard), transform 80ms var(--ease-standard);
 }
 .btn-sm { height: 36px; padding: 0 14px; font-size: var(--fs-sm); gap: 8px; }
@@ -38,7 +38,7 @@
 
 /* ---------- Badge (DS: Badge, Statusform) ----------
    Kleine Raute in der Statusfarbe plus Text. Keine Füllung, keine Linie, keine Pille. */
-.badge { display: inline-flex; align-items: center; gap: 7px; font-size: 13px; line-height: 1.2; color: var(--text-secondary); }
+.badge { display: inline-flex; align-items: center; gap: 7px; font-size: 14px; line-height: 1.2; color: var(--text-secondary); }
 .badge::before { content: ''; flex: none; width: 7px; height: 9px; background: var(--badge, var(--text-faint)); clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%); }
 .badge-messing { --badge: var(--gold-mark); color: var(--gold-text); }
 
