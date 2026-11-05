@@ -65,7 +65,7 @@
 .programmliste li { display: flex; gap: 12px; align-items: center; padding: 14px 0; border-top: 1px solid var(--border-subtle); }
 .programmliste .txt { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 3px; }
 .programmliste strong { font-size: 15px; }
-.programmliste .sub { margin: 0; font-size: 13px; color: var(--text-secondary); }
+.programmliste .sub { margin: 0; font-size: var(--fs-sm); color: var(--text-secondary); }
 
 /* App-Kachel: Icon oder Anfangsbuchstabe. */
 .app-kachel { flex: none; width: 38px; height: 38px; border-radius: var(--radius-sm); background: var(--border-subtle); display: grid; place-items: center; overflow: hidden; font-family: var(--font-display); font-size: 19px; color: var(--text-secondary); }
