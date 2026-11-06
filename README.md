@@ -12,10 +12,13 @@ Made for Arch-based systems with KDE Plasma. The window follows the system langu
 
 ```bash
 curl -fLO https://terma.vajra-team.eu/terma-0.1.0-1-x86_64.pkg.tar.zst
+sudo pacman -Syu
 sudo pacman -U ./terma-0.1.0-1-x86_64.pkg.tar.zst
 ```
 
 The package is not signed. `pacman -U` with a URL refuses unsigned packages, so the download comes first.
+Update the system before installing: on an outdated system pacman asks the mirrors for dependency versions they
+no longer have, and the install fails with 404 errors.
 
 ## How it decides
 

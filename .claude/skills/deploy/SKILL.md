@@ -24,7 +24,7 @@ git fetch origin && git status -sb       # Stand wie origin/main
 gh secret list -R Vajra-Team/Terma            # FTP_HOST, FTP_USER, FTP_PASSWORD
 gh workflow view paket.yml -R Vajra-Team/Terma   # Kennt GitHub erst, wenn die Datei auf main liegt.
 git -C ../terma-website status -sb       # Sauber und aktuell. Dort arbeitet evtl. ein anderer Agent.
-grep -n 'const COMMAND' ../terma-website/index.html   # Muss erst laden, dann die Datei installieren. `pacman -U <URL>` scheitert.
+grep -n 'const COMMAND' ../terma-website/index.html   # Erst laden, dann `pacman -Syu`, dann die Datei installieren. `pacman -U <URL>` scheitert.
 ```
 
 Dann die Tests: `dev/test.sh`, `npm test`, `npx svelte-check`.
@@ -70,7 +70,7 @@ In `../terma-website` genau diese Stellen ändern: `PACKAGE` in `index.html` und
 Lies den Befehl aus `const COMMAND` in `index.html`, setze `PACKAGE` ein und führe ihn wortgleich in einem unberührten Arch aus:
 
 ```bash
-sudo docker run --pull always --rm --user root archlinux:base-devel bash -euc 'pacman -Syu --noconfirm >/dev/null; yes "" | bash -euc "<Befehl>"; pacman -Q terma; test -f /usr/share/licenses/terma/LICENSE'
+sudo docker run --pull always --rm --user root archlinux:base-devel bash -euc 'yes "" | bash -euc "<Befehl>"; pacman -Q terma; test -f /usr/share/licenses/terma/LICENSE'
 curl -fsS https://terma.vajra-team.eu/ | grep -c '<PACKAGE>'
 ```
 
